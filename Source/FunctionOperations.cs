@@ -61,9 +61,9 @@ namespace GraphLibrary.Source
         public FunctionOperations(string function)
         {
             Function = function;
-            LeftLimit = 0;
-            RightLimit = 1;
-            NumberOfPoints = 100;
+            LeftLimit = -5;
+            RightLimit = 5;
+            NumberOfPoints = 50;
             X = new double[NumberOfPoints];
             Y = new double[NumberOfPoints];
             Tabulation();
