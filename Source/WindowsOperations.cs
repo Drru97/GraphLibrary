@@ -117,7 +117,7 @@ namespace GraphLibrary.Source
         /// </summary>
         private void CreateWindow()
         {
-            _form = new Form { ClientSize = new Size(400, 400) };
+            _form = new Form { ClientSize = new Size(400, 400), Text = (Operations.Length == 0) ? $"y = {Operations[0].Function}" : "Function" };
             _chart = new Chart
             {
                 Location = new Point(0, 0),
