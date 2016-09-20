@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Source\FunctionOperations.cs" />
+    <Compile Include="Source\FunctionReflection.cs" />
     <Compile Include="Source\GraphLibrary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
