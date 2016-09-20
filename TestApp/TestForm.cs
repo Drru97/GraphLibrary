@@ -17,7 +17,19 @@ namespace TestApp
             //    int count = operations.NumberOfPoints;
             //    for (int i = 0; i < count; i++)
             //     chart1.Series["Series1"].Points.AddXY(operations.X[i], operations.Y[i]);
-            WindowsOperations lib = new WindowsOperations(function.Text);
+            WindowsOperations lib;
+            try
+            {
+                if (left.Text == string.Empty && right.Text == string.Empty)
+                    lib = new WindowsOperations(function.Text);
+                else
+                    lib = new WindowsOperations(function.Text, double.Parse(left.Text), double.Parse(right.Text));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }
