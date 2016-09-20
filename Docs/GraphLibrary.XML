@@ -197,10 +197,12 @@
         </member>
         <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.Double[],System.Object[])">
             <summary>
-            
+            This function plots a chart between fisrt argument x and
+            the next agruments. The size and type of first and second 
+            arguments must be the same
             </summary>
-            <param name="x"></param>
-            <param name="y"></param>
+            <param name="x"> First argument x </param>
+            <param name="y"> Second, third and next arguments y </param>
         </member>
         <member name="M:GraphLibrary.Source.WindowsOperations.CreateWindow">
             <summary>

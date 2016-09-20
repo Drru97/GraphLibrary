@@ -129,7 +129,7 @@ namespace GraphLibrary.Source
             {
                 _chart.Series.Add($"Series{i}");
                 _chart.Series[$"Series{i}"].ChartType = SeriesChartType.Line;
-                for (int j = 0; j < Operations[i].X.Length; j++)
+                for (int j = 0; j < Operations[i].Y.Length; j++)
                     _chart.Series[$"Series{i}"].Points.AddXY(Operations[i].X[j], Operations[i].Y[j]);
             }
             _form.Controls.Add(_chart);

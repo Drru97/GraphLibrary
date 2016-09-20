@@ -20,7 +20,7 @@ namespace TestApp
             WindowsOperations lib = new WindowsOperations();
             double[] x = {1, 2, 3, 4, 5};
             double[] y = {2, 4, 6, 8, 10};
-            double[] k = {3, 6, 9, 12, 15};
+            double[] k = {3, 6, 9, 12, 15, 18, 21};
             double[] t = {5, 5, 5, 5, 5};
             lib.Draw(x, y, k);
             //try
