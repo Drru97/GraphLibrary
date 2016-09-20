@@ -74,8 +74,8 @@ namespace GraphLibrary.Source
         public FunctionOperations(string function)
         {
             Function = function;
-            LeftLimit = -5;
-            RightLimit = 5;
+            LeftLimit = -10;
+            RightLimit = 10;
             NumberOfPoints = 100;
             X = new double[NumberOfPoints];
             Y = new double[NumberOfPoints];
