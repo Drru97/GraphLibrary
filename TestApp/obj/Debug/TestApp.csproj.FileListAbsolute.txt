@@ -17,8 +17,8 @@ D:\MEGA\GraphLibrary\TestApp\bin\Debug\GraphLibrary.dll
 D:\MEGA\GraphLibrary\TestApp\bin\Debug\GraphLibrary.pdb
 D:\MEGA\GraphLibrary\TestApp\bin\Debug\GraphLibrary.xml
 D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.csprojResolveAssemblyReference.cache
-D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.Form1.resources
 D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.Properties.Resources.resources
 D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.csproj.GenerateResource.Cache
 D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.exe
 D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.pdb
+D:\MEGA\GraphLibrary\TestApp\obj\Debug\TestApp.TestForm.resources

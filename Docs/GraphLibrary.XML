@@ -127,7 +127,12 @@
             <exception cref="T:System.ArgumentNullException"> Throws when
             given incorrect function </exception>
         </member>
-        <member name="T:GraphLibrary.Source.GraphLibrary">
+        <member name="T:GraphLibrary.Source.WindowsOperations">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.#ctor(System.String)">
             <summary>
             
             </summary>
