@@ -43,6 +43,56 @@
             </summary>
             <param name="function"> Mathematical function in string view </param>
         </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String,System.Double)">
+            <summary>
+            Create an instance of this class
+            with preset mathematical function, 
+            tabulation step and tabulate it
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+            <param name="step"> Tabulation step </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String,System.Int32)">
+            <summary>
+            Create an instance of this class
+            with preset mathematical function
+            and number of tabulation points
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+            <param name="numberOfPoints"> Number of tabulation points </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Create an instance of this class
+            with preset mathematical function, 
+            left and right limits
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+            <param name="leftLimit"> Minimum value of function argument </param>
+            <param name="rightLimit"> Maximum value of function argument </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String,System.Double,System.Double,System.Int32)">
+            <summary>
+            Create an instance of this class
+            with preset mathematical function, 
+            limits and number of tabulation points
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+            <param name="leftLimit"> Minimum value of function argument </param>
+            <param name="rightLimit"> Maximum value of function argument </param>
+            <param name="numberOfPoints"> Number of points for tabulation </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Create an instance of this class
+            with preset mathematical function,
+            limits and tabulation step
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+            <param name="leftLimit"> Minimum value of function argument </param>
+            <param name="rightLimit"> Maximum value of function argument </param>
+            <param name="step"> Tabulation step </param>
+        </member>
         <member name="T:GraphLibrary.Source.FunctionReflection">
             <summary>
             This class is used to convert specifed as
@@ -76,6 +126,11 @@
             <returns> Function value y </returns>
             <exception cref="T:System.ArgumentNullException"> Throws when
             given incorrect function </exception>
+        </member>
+        <member name="T:GraphLibrary.Source.GraphLibrary">
+            <summary>
+            
+            </summary>
         </member>
     </members>
 </doc>

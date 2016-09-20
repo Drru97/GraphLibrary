@@ -8,14 +8,34 @@ namespace GraphLibrary.Source
     /// </summary>
     public class FunctionOperations
     {
+        private double _right;
+        private int _n;
         /// <value> Minimum value of function </value>
         public double LeftLimit { get; set; }
 
         /// <value> Maximum value of function</value>
-        public double RightLimit { get; set; }
+        public double RightLimit
+        {
+            get { return _right; }
+            set
+            {
+                if (value < LeftLimit)
+                    throw new ArgumentOutOfRangeException(nameof(value), "Right limit must be higher than left");
+                _right = value;
+            }
+        }
 
         /// <value> Number of points which will be used in charting </value>
-        public int NumberOfPoints { get; set; }
+        public int NumberOfPoints
+        {
+            get { return _n; }
+            set
+            {
+                if (value < 1)
+                    throw new ArgumentOutOfRangeException(nameof(value), "Number of points must be higher than 1");
+                _n = value;
+            }
+        }
 
         /// <value> Array of function arguments x </value>
         public double[] X { get; set; }

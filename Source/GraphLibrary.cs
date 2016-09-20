@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GraphLibrary.Source
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class GraphLibrary
     {
 
