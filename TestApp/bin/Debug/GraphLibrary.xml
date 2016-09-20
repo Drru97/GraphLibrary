@@ -4,6 +4,24 @@
         <name>GraphLibrary</name>
     </assembly>
     <members>
+        <member name="T:GraphLibrary.Source.FunctionOperations">
+            <summary>
+            Class which contains information about
+            function and processing methods
+            </summary>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.LeftLimit">
+            <value> Minimum value of function </value>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.RightLimit">
+            <value> Maximum value of function</value>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.NumberOfPoints">
+            <value> Number of points which will be used in charting </value>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.Function">
+            <value> Sets mathematical function as a string </value>
+        </member>
         <member name="T:GraphLibrary.Source.FunctionReflection">
             <summary>
             This class is used to convert specifed as

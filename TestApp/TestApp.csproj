@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4CC4FDF4-898E-478B-8602-EF3306D1EFFF}</ProjectGuid>
+    <ProjectGuid>{710706B3-DA1A-40D0-8101-7E884D1B6767}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TestApp</RootNamespace>
@@ -96,7 +96,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GraphLibrary\GraphLibrary.csproj">
+    <ProjectReference Include="..\GraphLibrary.csproj">
       <Project>{80958a11-cd09-406a-b147-c5870e8f6dae}</Project>
       <Name>GraphLibrary</Name>
     </ProjectReference>
