@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GraphLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:GraphLibrary.Source.FunctionReflection">
+            <summary>
+            This class is used to convert specifed as
+            string functions into lambda expressions
+            </summary>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionReflection.Function">
+            <value> Sets functions as a string </value>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionReflection.#ctor(System.String)">
+            <summary>
+            Creates an instance of this class
+            with specified comliler parameters
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionReflection.Compile">
+            <summary>
+            This method is used to compile source code
+            from strings with specified parameters
+            </summary>
+            <exception cref="T:System.IO.FileNotFoundException"> Throws when 
+            given incorrect function and compiler cannot compile assembly</exception>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionReflection.InvokeMethod(System.Double)">
+            <summary>
+            This method is used to dynamic invoke lambda
+            expression as a result of compilation
+            </summary>
+            <param name="x"> Function argument x </param>
+            <returns> Function value y </returns>
+            <exception cref="T:System.ArgumentNullException"> Throws when
+            given incorrect function </exception>
+        </member>
+    </members>
+</doc>

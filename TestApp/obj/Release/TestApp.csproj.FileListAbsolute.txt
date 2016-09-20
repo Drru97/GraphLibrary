@@ -1,0 +1,11 @@
+D:\MEGA\TestApp\bin\Release\TestApp.exe.config
+D:\MEGA\TestApp\bin\Release\TestApp.exe
+D:\MEGA\TestApp\bin\Release\TestApp.pdb
+D:\MEGA\TestApp\bin\Release\GraphLibrary.dll
+D:\MEGA\TestApp\bin\Release\GraphLibrary.pdb
+D:\MEGA\TestApp\obj\Release\TestApp.csprojResolveAssemblyReference.cache
+D:\MEGA\TestApp\obj\Release\TestApp.Form1.resources
+D:\MEGA\TestApp\obj\Release\TestApp.Properties.Resources.resources
+D:\MEGA\TestApp\obj\Release\TestApp.csproj.GenerateResource.Cache
+D:\MEGA\TestApp\obj\Release\TestApp.exe
+D:\MEGA\TestApp\obj\Release\TestApp.pdb
