@@ -19,8 +19,29 @@
         <member name="P:GraphLibrary.Source.FunctionOperations.NumberOfPoints">
             <value> Number of points which will be used in charting </value>
         </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.X">
+            <value> Array of function arguments x </value>
+        </member>
+        <member name="P:GraphLibrary.Source.FunctionOperations.Y">
+            <value> Array of function values y </value>
+        </member>
         <member name="P:GraphLibrary.Source.FunctionOperations.Function">
             <value> Sets mathematical function as a string </value>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.Tabulation(System.Double)">
+            <summary>
+            Method is used to get a function values y
+            from function arguments x
+            </summary>
+            <param name="h"> Tabulation step </param>
+        </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String)">
+            <summary>
+            Creates an instance of this class
+            with preset mathematical function and
+            default parameters and tabulate it
+            </summary>
+            <param name="function"> Mathematical function in string view </param>
         </member>
         <member name="T:GraphLibrary.Source.FunctionReflection">
             <summary>

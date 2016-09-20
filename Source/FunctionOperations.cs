@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
 
 namespace GraphLibrary.Source
 {
@@ -35,9 +30,11 @@ namespace GraphLibrary.Source
         /// Method is used to get a function values y
         /// from function arguments x
         /// </summary>
-        private void Tabulation()
+        /// <param name="h"> Tabulation step </param>
+        private void Tabulation(double h = 0)
         {
-            double h = (RightLimit - LeftLimit) / NumberOfPoints;
+            if (Math.Abs(h) < 0.000001)
+                h = (RightLimit - LeftLimit) / NumberOfPoints;
             X[0] = LeftLimit;
             FunctionReflection reflection = new FunctionReflection(Function);
             for (int i = 0; i < NumberOfPoints - 1; i++)
@@ -59,10 +56,93 @@ namespace GraphLibrary.Source
             Function = function;
             LeftLimit = -5;
             RightLimit = 5;
-            NumberOfPoints = 1000;
+            NumberOfPoints = 100;
             X = new double[NumberOfPoints];
             Y = new double[NumberOfPoints];
             Tabulation();
+        }
+
+        /// <summary>
+        /// Create an instance of this class
+        /// with preset mathematical function, 
+        /// tabulation step and tabulate it
+        /// </summary>
+        /// <param name="function"> Mathematical function in string view </param>
+        /// <param name="step"> Tabulation step </param>
+        public FunctionOperations(string function, double step) : this(function)
+        {
+            NumberOfPoints = (int)((RightLimit - LeftLimit) / step + 1);
+            X = new double[NumberOfPoints];
+            Y = new double[NumberOfPoints];
+            Tabulation(step);
+        }
+
+        /// <summary>
+        /// Create an instance of this class
+        /// with preset mathematical function
+        /// and number of tabulation points
+        /// </summary>
+        /// <param name="function"> Mathematical function in string view </param>
+        /// <param name="numberOfPoints"> Number of tabulation points </param>
+        public FunctionOperations(string function, int numberOfPoints) : this(function)
+        {
+            NumberOfPoints = numberOfPoints;
+            X = new double[NumberOfPoints];
+            Y = new double[NumberOfPoints];
+            Tabulation();
+        }
+
+        /// <summary>
+        /// Create an instance of this class
+        /// with preset mathematical function, 
+        /// left and right limits
+        /// </summary>
+        /// <param name="function"> Mathematical function in string view </param>
+        /// <param name="leftLimit"> Minimum value of function argument </param>
+        /// <param name="rightLimit"> Maximum value of function argument </param>
+        public FunctionOperations(string function, double leftLimit, double rightLimit)
+        {
+            Function = function;
+            LeftLimit = leftLimit;
+            RightLimit = rightLimit;
+            NumberOfPoints = (int)(RightLimit - LeftLimit) * 100;
+            X = new double[NumberOfPoints];
+            Y = new double[NumberOfPoints];
+            Tabulation();
+        }
+
+        /// <summary>
+        /// Create an instance of this class
+        /// with preset mathematical function, 
+        /// limits and number of tabulation points
+        /// </summary>
+        /// <param name="function"> Mathematical function in string view </param>
+        /// <param name="leftLimit"> Minimum value of function argument </param>
+        /// <param name="rightLimit"> Maximum value of function argument </param>
+        /// <param name="numberOfPoints"> Number of points for tabulation </param>
+        public FunctionOperations(string function, double leftLimit, double rightLimit, int numberOfPoints) : this(function, leftLimit, rightLimit)
+        {
+            NumberOfPoints = numberOfPoints;
+            X = new double[NumberOfPoints];
+            Y = new double[NumberOfPoints];
+            Tabulation();
+        }
+
+        /// <summary>
+        /// Create an instance of this class
+        /// with preset mathematical function,
+        /// limits and tabulation step
+        /// </summary>
+        /// <param name="function"> Mathematical function in string view </param>
+        /// <param name="leftLimit"> Minimum value of function argument </param>
+        /// <param name="rightLimit"> Maximum value of function argument </param>
+        /// <param name="step"> Tabulation step </param>
+        public FunctionOperations(string function, double leftLimit, double rightLimit, double step) : this(function, leftLimit, rightLimit)
+        {
+            NumberOfPoints = (int)((RightLimit - LeftLimit) / step + 1);
+            X = new double[NumberOfPoints];
+            Y = new double[NumberOfPoints];
+            Tabulation(step);
         }
     }
 }
