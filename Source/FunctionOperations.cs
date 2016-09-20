@@ -66,6 +66,11 @@ namespace GraphLibrary.Source
         }
 
         /// <summary>
+        /// Empty constructor
+        /// </summary>
+        public FunctionOperations() { }
+
+        /// <summary>
         /// Creates an instance of this class
         /// with preset mathematical function and
         /// default parameters and tabulate it

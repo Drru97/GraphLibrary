@@ -35,6 +35,11 @@
             </summary>
             <param name="h"> Tabulation step </param>
         </member>
+        <member name="M:GraphLibrary.Source.FunctionOperations.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
         <member name="M:GraphLibrary.Source.FunctionOperations.#ctor(System.String)">
             <summary>
             Creates an instance of this class
@@ -129,12 +134,79 @@
         </member>
         <member name="T:GraphLibrary.Source.WindowsOperations">
             <summary>
-            
+            Class which contains methods
+            for drawing charts
             </summary>
         </member>
-        <member name="M:GraphLibrary.Source.WindowsOperations.#ctor(System.String)">
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String,System.Double,System.Double)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression
+            and its limits
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+            <param name="leftLimit"> Minimum of argument x </param>
+            <param name="rightLimit"> Maximum of argument x </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String,System.Double)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression
+            and tabulation step
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+            <param name="step"> Tabulation step </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String,System.Int32)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression
+            and number of points
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+            <param name="numberOfPoints"> Number of points which will be used in charting </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression,
+            limits and tabulation step
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+            <param name="leftLimit"> Minimum of argument x </param>
+            <param name="rightLimit"> Maximum of argument x </param>
+            <param name="step"> Tabulation step </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.String,System.Double,System.Double,System.Int32)">
+            <summary>
+            Method which draw function graph
+            preset by mathematical expression
+            and number of points
+            </summary>
+            <param name="function"> Mathematical expression as string </param>
+            <param name="leftLimit"> Minimum of argument x </param>
+            <param name="rightLimit"> Maximum of argument x </param>
+            <param name="numberOfPoints"> Number of points which will be used in charting </param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.Draw(System.Double[],System.Object[])">
             <summary>
             
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:GraphLibrary.Source.WindowsOperations.CreateWindow">
+            <summary>
+            This method creates Windows Form and 
+            Chart, adds new Series and Chart Area
+            and plots
             </summary>
         </member>
     </members>

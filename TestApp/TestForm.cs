@@ -17,18 +17,23 @@ namespace TestApp
             //    int count = operations.NumberOfPoints;
             //    for (int i = 0; i < count; i++)
             //     chart1.Series["Series1"].Points.AddXY(operations.X[i], operations.Y[i]);
-            WindowsOperations lib;
-            try
-            {
-                if (left.Text == string.Empty && right.Text == string.Empty)
-                    lib = new WindowsOperations(function.Text);
-                else
-                    lib = new WindowsOperations(function.Text, double.Parse(left.Text), double.Parse(right.Text));
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            WindowsOperations lib = new WindowsOperations();
+            double[] x = {1, 2, 3, 4, 5};
+            double[] y = {2, 4, 6, 8, 10};
+            double[] k = {3, 6, 9, 12, 15};
+            double[] t = {5, 5, 5, 5, 5};
+            lib.Draw(x, y, k);
+            //try
+            //{
+            //    if (left.Text == string.Empty && right.Text == string.Empty)
+            //        lib.Draw(function.Text);
+            //    else
+            //        lib.Draw(function.Text, double.Parse(left.Text), double.Parse(right.Text));
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
         }
     }
